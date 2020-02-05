@@ -65,12 +65,17 @@ circles.push(circle);
             game.checkCirclePosition(circle[2]);
             game.checkCirclePosition(circle[3]);
             game.checkCirclePosition(circle[4]);
-            if (circle)
+            if (circle.x > canvas.width) {
+                circle.x = 0;
+            }
+            if (circle.y > cancas.height){
+                circle.y = 0;
+            }
 
             // TODO 8 : Iterate over the array
            
             
-        }
+        
     
         /* 
         This Function should check the position of a circle that is passed to the 
